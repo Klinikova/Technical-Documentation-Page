@@ -1,0 +1,112 @@
+<html>
+  <head>
+    </head>
+      <body>
+      <nav class="nav">
+        <header>HTML Documentation</header>
+         <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#who">Who Invented HTML?</a></li>           
+          <li class="nav-item"><a class="nav-link" href="#look-like">What Does HTML Look Like?</a></li>
+          <li class="nav-item"><a class="nav-link" href="#title">The &lt;TITLE&gt; element.</a></li>
+          <li class="nav-item"><a class="nav-link" href="#meta">The &lt;META&gt; element.</a></li>
+          <li class="nav-item"><a class="nav-link" href="#body">The &lt;BODY&gt; element.</a></li>
+          <li class="nav-item"><a class="nav-link" href="#link">How to create a link in HTML</a></li> 
+     </ul>       
+   </nav>    
+        
+   <div style="margin-left:25%;padding:1px 16px;height:1000px;">    
+    <h1 id="who">Who Invented HTML?</h1>
+      <label>
+        <br>The first public draft of HTML was published in October 1991, by Englishman <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee"><b>Sir Tim Berners Lee</b></a> (inventor of the World Wide Web).</br></label>
+    <li>He came up with the idea of sharing information no matter where a computer was located, through the use of hyperlinks (HTML-coded links that connect one resource to another), HTTP (a communication protocol for web servers and web users) and the URL (a streamlined address system for every web page on the internet).</li>
+<li>HTML v2.0 was released in November of 1995, after which were seven others to form HTML 5.1 in November of 2016. It's published as a W3C Recommendation.</li>
+  
+<h1 id="look-like">What Does HTML Look Like?</h1>
+  <label>The HTML language uses what are called tags, which are words or acronyms surrounded by brackets. A typical HTML tag looks like what you see in the image above.</label>
+     <li>HTML tags are written as pairs; there must be a beginning tag and an ending tag in order to make the code display correctly. You can think of it like an opening and closing statement, or like an uppercase letter to start a sentence and a period to end it.</li>
+     <li>The first tag designates how the following text will be grouped or displayed, and the closing tag (signaled with a backslash) designates the end of this group or display.</li>
+     <li>HTML is an application of the (SGML) Standard Generalised Markup Language which is the international standard for Markup. It is a standard format for hypertext documents which includes web pages and alike.</li>
+     <li>Every HTML document adheres to a few rules relating to its structure, these rules dictate the minimum elements required along with their order in the document. Below is the standard element layout: </li>  
+        
+        <div class="container">
+          <div class="layer1"><b>&lt;HTML&gt;</b>
+            <br><b>&lt;HEAD&gt;
+            </b><br>
+                <b>&lt;TITLE&gt;</b> the title of your document <b>&lt;TITLE&gt;</b><br>
+                  <b>&lt;META NAME="description" CONTENT="</b>Description of your page goes here<b>"&gt;</b><br> 
+                    <b>&lt;META NAME="keywords" CONTENT="</b>keyphrase 1, keyphrase 2, etc<b>"&gt;</b><br>  
+                      <b>&lt;/HEAD&gt;</b><br>  
+                     <br><b>&lt;BODY&gt;</b><br>  
+                  <br>main body of page goes here (content area)<br> 
+                <br><b>&lt;/BODY&gt;</b><br> 
+             <br><b>&lt;/HTML&gt;<b> 
+          </div>
+        
+      <li>The &lt;HEAD&gt; element.
+The HEAD element can contain several different types of data including HTML elements, CSS (Cascading Style Sheet) definitions and also Javascript code.</li>
+      <li>HTML elements which are placed within the HEAD container include the <b>&lt;TITLE&gt;</b> tag and also any of the numerous <b>&lt;META&gt;</b> tags (see below). </li>
+            
+    <h1 id="title">The &lt;TITLE&gt; element.</h1>
+      <label>This is used to define the title of your HTML document. Its usage is as follows: </label>
+  <p><label>&lt;TITLE&gt; the title of your document &lt;/TITLE&gt; <br></label>
+  <p><label>When choosing a title for your page bear in mind how it will look when in a listed environment such as a search engine. Try to keep your page title less than 64 characters long, any descriptive information should go in your META DESCRIPTION tag (see below). Keeping your page title short and to-the-point will help search engines interpret the topic of your page more efficiently. Also, not duplicating words in the title and keeping it below 64 characters may stop certain search engines rewriting your title in the search results.<br></label>
+    
+<h1 id="meta">The &lt;META&gt; element.</h1>
+  <p><p1><label>META elements are used to define lots of different information about your document. Below we describe some of the more common tags which can be included within your HEAD container.<br></p></label>
+  <p1 id="red"><label><b>The DESCRIPTION META tag.</b><br></label></p1>
+    
+    <p><label>This tag is used to give a summary of the contents of your document. When writing your description keep in mind how it will be displayed in a search engine's results. For example, most search engines only display the first XX characters of the META DESCRIPTION, so you want to provide the most relevant description within this amount of characters. Its usage is: 
+</p></label>
+      <p><p1><label>For example,<br></p></label>
+        <div class="layer2">&lt;META NAME="description" CONTENT="Description of your page goes here"&gt;
+    </div>
+      <p1 id="red"><label><b>The KEYWORDS META tag.</b><br></label></p1> 
+        <p><label>The keywords tag is used to provide relevant words/phrases about your document. Each word or phrase is separated by a comma, to ensure relevancy only place the most relevant words and/or phrases within this element.</p></label>
+          <p><p1><label>For example:<br></p></label>
+            <div class="layer2">&lt;META NAME="keywords" CONTENT="keyphrase 1, keyphrase 2, etc"&gt;
+          </div>
+          
+      <p1 id="red"><label><b>The AUTHOR META tag.</b><br></label></p1> 
+        <p><label>This tag, in some environments, is used to depict the author of the content.</p></label>
+          <p><p1><label>For example:<br></p></label>
+            <div class="layer2">&lt;META NAME="author" CONTENT="Joe Bloggs"&gt;
+          </div>  
+        
+      <p1 id="red"><label><b>The ROBOTS META tag.</b><br></label></p1> 
+        <p><label>The ROBOTS meta tag is used to let search engines know how to treat that particular page.</p></label>
+         <p><label>The default behaviour of search engines is to index your page and follow all links within that document. There are several main parameters that can be placed within this tag including, index, noindex, follow and nofollow. The parameter index means the page should be indexed (included in search results), noindex means it will not be included within a search engine's results. The parameter follow means the search engine will follow the links on the page, therefore discovering any pages linked to, and nofollow means the links on the page should not be followed.</p></label>
+          <p><p1><label>An example of its usage is:<br></p></label>
+            <div class="layer2">&lt;META NAME="robots" CONTENT="noindex"&gt;
+          </div>  
+  
+      <p1 id="red"><label><b>The LANGUAGE META tag.</b><br></label></p1> 
+        <p><label>This tag is used to define the language of the content. It uses two-letter language codes, for example, EN is English, ES is Spanish, FR is French, PT is Portuguese, etc.</p></label>
+          <p><p1><label>For example:<br></p></label>
+            <div class="layer2">&lt;META NAME="language" CONTENT="en"&gt;
+          </div>  
+                 
+<h1 id="body">The &lt;BODY&gt; element.</h1>
+    <p1><label>The BODY element, as its name suggests, encloses the main body of the page. All of your content goes within the BODY element.<br></p1></label>
+      <p><p1><label>An example of its usage is:<br></p></label>
+        <div class="layer2">&lt;BODY&gt; content of your page here &lt;/BODY&gt;
+      </div>  
+    
+<h1 id="link">How to create a link in HTML</h1>
+  <p><label>To create a link in a HTML document you use the &lt;A HREF&gt; tag, see below.</p></label>
+    <div class="layer2">&lt;A HREF="URL"&gt; link text/image &lt;/A&gt;
+   </div> 
+      <p><label>This provides a link (hyperlink) to the <b>URL</b> specified in the &lt;A HREF&gt; tag. The &lt;/A&gt; denotes the end of the link tag.</p></label>
+        <div class="layer2">&lt;A HREF="#???"> link text/image &lt;/A&gt;
+   </div> 
+      <p><label>Provides a link to an <b>&lt;A NAME="???"&gt;</b> tag (see below) which resides in the <b>URL</b>.</p></label>
+        <div class="layer2">&lt;A HREF="mailto:whoever@example.com"&GT; link text/image &LT;/a&gt;
+   </div> 
+      <p><label>When the mailto attribute is used as above, it provides a link to send an email to the recipient's address, in our example whoever@example.com. When the link is clicked the visitor's browser will open their default mail software, such as Microsoft Outlook Express, which is then used to send the email. </p></label>   
+      <p><label>If you want to set the subject for the email you can use: </p></label>
+      <p><label><b>&lt;A HREF="mailto:whoever@domain.com?subject=****"&gt;</b>link text/image <b>&lt;/A&gt;</b> 
+where **** is the text of the subject.</p></label>
+      <p><label>The final attribute we will look at is the NAME attribute:</p></label>
+        <div class="layer2">&lt;A NAME="???"&gt; target text/image &lt;/A&gt;
+   </div> 
+       <p><label>This is a useful tag if you have a page with a lot of content that is split into sections. It allows you to specify which section of the webpage will be displayed after the user follows a <span style="color: red">&lt;A HREF="#???"&gt; or &lt;A HREF="URL#???"&gt; tag.</p></label>
+         
